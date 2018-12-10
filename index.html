@@ -1,0 +1,35 @@
+<!doctype hmtl>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Elementum TMDB App - Adil Madhani</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	
+  	<link href="style.css" rel="stylesheet">
+
+  	
+
+</head>
+
+	<body>
+
+	  <div id="root">
+	  	<div id="header">
+		  	<label>Sort by:</label>
+		  	<select id="dynamic_select" onchange="location.reload()">
+			    <option value="https://api.themoviedb.org/3/movie/popular?api_key=ddb907d69f1671fabdfd75c40b664a37&language=en-US&page=1" selected>Now Playing</option>
+			    <option value="https://api.themoviedb.org/3/movie/now_playing?api_key=ddb907d69f1671fabdfd75c40b664a37&language=en-US&page=1">Popular</option>
+			    <option value="https://api.themoviedb.org/3/movie/top_rated?api_key=ddb907d69f1671fabdfd75c40b664a37&language=en-US&page=1">Top Rated</option>
+			    <option value="https://api.themoviedb.org/3/movie/upcoming?api_key=ddb907d69f1671fabdfd75c40b664a37&language=en-US&page=3">Upcoming</option>
+			</select>
+		</div>
+	  </div>
+
+	  <script src="scripts.js"></script>
+	</body>
+
+</html>
