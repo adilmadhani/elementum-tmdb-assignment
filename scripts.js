@@ -16,7 +16,8 @@ app.appendChild(createdBy);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-var url = document.querySelector('#dynamic_select').value;
+var url = document.querySelector('#select').value;
+console.log(url);
 
 request.open('GET', url, true);
 request.onload = function () {
